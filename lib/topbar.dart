@@ -6,6 +6,7 @@ class Topbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
+      color: Colors.red,
       height: 80,
       child: Column(
         children: [
@@ -28,14 +29,17 @@ class Topbar extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  spacing: 10,
-                  
-                  children: [
-                    Text('save'),
-                      Text("add")
-                       ],
+                child: Padding(
+                  padding: const EdgeInsets.only(right:30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    spacing: 30,
+                    
+                    children: [
+                      Text('save'),
+                        Text("add")
+                         ],
+                  ),
                 ),
               ),
             ],
