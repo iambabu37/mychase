@@ -3,15 +3,13 @@ import 'package:file_picker/file_picker.dart';
 import 'package:mycochase/Evidance.dart';
 import 'package:mycochase/Species.dart';
 import 'dart:io';
-import 'All.dart';
-import 'Drug.dart';
 
-// void main() {
-//   runApp(const MyApp());
-// }
+void main() {
+  runApp(const MyApp());
+}
 
-class TopbarApp extends StatelessWidget {
-  const TopbarApp({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -124,24 +122,10 @@ class _HomePageState extends State<HomePage> {
               flex: 4,
               child: TabBarView(
                 children: [
-                  All(),
-                  // Center(child: Icon(Icons.home)),
-                  Drug(),
-                  Evidance(),
-                  Species(),
+                  Startpage(),
                 ],
               ),
             ),
-            // Positioned(
-            //   bottom: 10,
-            //   right: 50,
-            //   child: FloatingActionButton(
-            //   child: Text("Back"),
-            
-            //   onPressed: (){
-            //     // Navigator.pop(context);
-            //   }),
-            // )
             // Expanded(
             //   flex: 1,
             //   child: Container(

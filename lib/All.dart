@@ -18,6 +18,8 @@ class All extends StatelessWidget {
             ),
           ),
           Divider(
+            indent: 10,
+            endIndent: 10,
             color: Colors.grey, // Optional: customize color
             thickness: 1.0, // Line thickness
             height: 1, // Total height including spacing

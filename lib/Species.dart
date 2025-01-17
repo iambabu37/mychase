@@ -26,16 +26,18 @@ class Species extends StatelessWidget {
                           "SPECIES",
                           style: TextStyle(color: Colors.blue, fontSize: 18),
                         ),
-                        Divider(
-                          color: Colors.grey, // Optional: customize color
-                          thickness: 1.0, // Line thickness
-                          height: 1, // Total height including spacing
-                        ),
                       ],
                     ),
                   ),
+                  Divider(
+                    indent:10 ,
+                    endIndent: 10,
+                    color: Colors.grey, // Optional: customize color
+                    thickness: 1.0, // Line thickness
+                    height: 1, // Total height including spacing
+                  ),
                   Padding(
-                    padding: EdgeInsets.only(left: 30),
+                    padding: EdgeInsets.only(left: 30,top: 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       spacing: 10,
